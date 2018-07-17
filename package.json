@@ -1,8 +1,13 @@
 {
   "name": "reduced-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tini immutability and reducer utils library",
-  "keywords": ["reducer", "immutable", "functional", "utils"],
+  "keywords": [
+    "reducer",
+    "immutable",
+    "functional",
+    "utils"
+  ],
   "main": "lib/reduced-utils.cjs.js",
   "module": "lib/reduced-utils.es.js",
   "author": {
@@ -38,5 +43,7 @@
     },
     "collectCoverage": true
   },
-  "files": ["lib"]
+  "files": [
+    "lib"
+  ]
 }
