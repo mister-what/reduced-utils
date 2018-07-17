@@ -1,9 +1,16 @@
 {
-  "name": "reducer-utils",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "lib/index.js",
+  "name": "reduced-utils",
+  "version": "0.1.0",
+  "description": "Tini immutability and reducer utils library",
+  "keywords": ["reducer", "immutable", "functional", "utils"],
+  "main": "lib/reduced-utils.cjs.js",
+  "module": "lib/reduced-utils.es.js",
+  "author": {
+    "name": "Jonas Winzen",
+    "email": "2ndjpeg@gmail.com"
+  },
+  "license": "MIT",
+  "repository": "github:mister-what/reduced-utils",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.54",
@@ -21,13 +28,15 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "NODE_ENV=production rollup -c",
-    "build:dev": "rollup -c"
+    "build": "rollup -c",
+    "build:min": "NODE_ENV=production rollup -c",
+    "prepare": "rm -rf lib && npm run build && npm run build:min"
   },
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     },
     "collectCoverage": true
-  }
+  },
+  "files": ["lib"]
 }

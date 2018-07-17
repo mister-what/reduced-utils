@@ -11,19 +11,19 @@ export default {
   input: "src/index.js",
   output: [
     {
-      file: "lib/reduced-utils.cjs.js",
+      file: `lib/reduced-utils.cjs.${prod ? "min.js" : "js"}`,
       format: "cjs"
     },
     {
-      file: "lib/reduced-utils.es.js",
+      file: `lib/reduced-utils.es.${prod ? "min.js" : "js"}`,
       format: "es"
     },
     {
-      file: "lib/reduced-utils.legacy.js",
+      file: `lib/reduced-utils.iife.${prod ? "min.js" : "js"}`,
       format: "iife",
       name: globalName,
       footer: `window.${globalName} = ${globalName};`
-    },
+    }
   ],
   plugins: [
     resolve(),
