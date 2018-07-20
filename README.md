@@ -19,7 +19,25 @@ console.log(nextObject) // {someProp: "value", some: {deep: {value: "Hello World
 
 ```
 
-### `combineReducers`
+### combineReducers
+
+```typescript
+combineReducers(
+  reducers: {
+    [sliceName: string]: (
+      state: Object, 
+      action: Object
+    ) => newState: Object
+  },
+  initialState?: Object
+): (state: Object, action: Object) => newState: Object
+```
+
+See: https://redux.js.org/api-reference/combinereducers
+
+```js
+const rootReducer = combineReducers({potato: potatoReducer, tomato: tomatoReducer}, {});
+```
 
 
 ### `createReducer`
