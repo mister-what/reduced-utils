@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mister-what/reduced-utils.svg?branch=master)](https://travis-ci.org/mister-what/reduced-utils)
+[![Build Status](https://travis-ci.org/mister-what/reduced-utils.svg?branch=master)](https://travis-ci.org/mister-what/reduced-utils) [![codecov](https://codecov.io/gh/mister-what/reduced-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/mister-what/reduced-utils)
 # reduced-utils
 Tini immutability and reducer utils library
 
