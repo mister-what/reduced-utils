@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/mister-what/reduced-utils.svg?branch=master)](https://travis-ci.org/mister-what/reduced-utils)
 # reduced-utils
 Tini immutability and reducer utils library
 
