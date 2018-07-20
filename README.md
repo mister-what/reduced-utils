@@ -4,7 +4,7 @@ Tini immutability and reducer utils library
 ## Usage
 
 
-### `set`
+### set
 
 ```js
 import { set } from "reduced-utils";
@@ -40,7 +40,7 @@ const rootReducer = combineReducers({potato: potatoReducer, tomato: tomatoReduce
 ```
 
 
-### `createReducer`
+### createReducer
 
 ```js
 import { createReducer } from "reduced-utils";
@@ -57,8 +57,4 @@ export const counterReducer = createReducer({
 
 ```
 
-### `applyActions`
-
-
-### `composeReducers`
 
